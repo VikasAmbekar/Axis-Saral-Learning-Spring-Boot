@@ -100,9 +100,9 @@
     "managerId": "MAB91"
   }
 
-3. MAPPING EMPLOYEE WITH MANAGER, PROJECT (STAKEHOLDER)
+3. MAPPING EMPLOYEE WITH MANAGER, PROJECT (STAKEHOLDER + SUPPORTTEAMA)
 
-  "employeeId": "EMP1",
+      "employeeId": "EMP1",
   "employeeName": "Vikas Ambekar",
   "emailId": "ambekarviks@gmail.com",
   "mobileNo": 7900001883,
@@ -123,14 +123,43 @@
     "projectId": "PAB9P3",
     "projectName": "Axis Credit Card Application",
     "managerId": "MAB91",
-    "stakeholder": {
+    "stakeholder": [{
         "stakeholderId": "SHID1",
         "stakeholderName": "Mohan Rajeev",
         "stakeholderEmail": "mohan@gmail.com",
         "stakeholderMobileNo": 7898635625,
         "stakeholderPosition": "N/A"
-    }
+        },
+        {
+        "stakeholderId": "SHID3",
+        "stakeholderName": "Baburao Ganpatrao Apte",
+        "stakeholderEmail": "babu@gmail.com",
+        "stakeholderMobileNo": 7998635625,
+        "stakeholderPosition": "counsellor member"  
+        }
+    ],
+    "supportTeamList": [
+        {
+            "employeeId": "EMP51",  
+            "employeeName": "Mohmmad Shami",
+            "emailId": "shami@gmail.com",
+            "mobileNo": 8888999989,
+            "designation": "IT Support",
+            "password": "Shami@51"
+        },
+        {
+            "employeeId": "EMP52",  
+            "employeeName": "Deepak Hooda",
+            "emailId": "deepak@gmail.com",
+            "mobileNo": 8887799989,
+            "designation": "IT Support",
+            "password": "Shami@52"
+        }
+
+    ]
   }
+
+
 
 
 

@@ -1,5 +1,6 @@
 package com.axis.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -7,6 +8,7 @@ import jakarta.persistence.Id;
 import java.util.Objects;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class SupportTeam {
     @Id
     @Column(name = "Employee_ID", nullable = false)

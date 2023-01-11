@@ -3,6 +3,7 @@ package com.axis.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -17,18 +18,23 @@ public class Project {
     @Column(name = "Project_Manager_ID", nullable=false)
     public String managerId;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn
-    private Stakeholder stakeholder;
+    private List<Stakeholder> stakeholder;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn
+    private List<SupportTeam> supportTeamList;
 
     public Project() {
     }
 
-    public Project(String projectId, String projectName, String managerId, Stakeholder stakeholder) {
+    public Project(String projectId, String projectName, String managerId, List<Stakeholder> stakeholder, List<SupportTeam> supportTeamList) {
         this.projectId = projectId;
         this.projectName = projectName;
         this.managerId = managerId;
         this.stakeholder = stakeholder;
+        this.supportTeamList = supportTeamList;
     }
 
     public String getProjectId() {
@@ -55,12 +61,20 @@ public class Project {
         this.managerId = managerId;
     }
 
-    public Stakeholder getStakeholder() {
+    public List<Stakeholder> getStakeholder() {
         return stakeholder;
     }
 
-    public void setStakeholder(Stakeholder stakeholder) {
+    public void setStakeholder(List<Stakeholder> stakeholder) {
         this.stakeholder = stakeholder;
+    }
+
+    public List<SupportTeam> getSupportTeamList() {
+        return supportTeamList;
+    }
+
+    public void setSupportTeamList(List<SupportTeam> supportTeamList) {
+        this.supportTeamList = supportTeamList;
     }
 
     @Override
