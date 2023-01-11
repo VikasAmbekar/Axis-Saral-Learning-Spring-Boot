@@ -1,0 +1,136 @@
+1. Entity: Employee
+
+ "employeeName": "Vikas Ambekar",
+  "emailId": "ambekarviks@gmail.com",
+  "mobileNo": 7900001883,
+  "designation": "IT Deputy Manager",
+  "password": "Vikas@123",
+  "projectId": "p12",
+  "managerId": "m10",
+  "workingStatus": true
+
+2. Entity: Project
+
+    "managerName": "Sandeep Kuldeep",
+    "designation": "IT Manager",
+    "emailId": "sandeepkuldeep@axis.com",
+    "mobileNo": 8956234586,
+    "password": "Sandeep@11"
+
+3. Entity: Project 
+
+    "projectId": "PAB9P3",
+    "projectName": "Axis Credit Card Application",
+    "managerId": "MAB91"
+
+4. Entity: StakeHolder
+
+ "stakeholderId": "SHID1",
+ "stakeholderName": "Mohan Rajeev",
+ "stakeholderEmail": "mohan@gmail.com",
+ "stakeholderMobileNo": 7898635625,
+ "stakeholderPosition": "N/A"
+
+5. Entity: Support Team
+ 
+  "employeeId": "EMP1",  
+  "employeeName": "Mohmmad Shami",
+  "emailId": "shami@gmail.com",
+  "mobileNo": 8888999989,
+  "designation": "IT Support",
+  "password": "Shami@123"
+
+6. Entity: Opportinities
+
+  "projectId": "PABP4",  
+  "projectDesignation": "Software Engineer",
+  "projectDomain": "Software Developer",
+  "projectDuration": "12 months",
+  "projectManagerId": "MAB910",
+  "salary":80000,
+  "location":"Mumbai-Worli",
+  "description":"E-Commerce project Development for Axis Bank"
+
+
+
+------------------------------------------------------>
+
+1. MAPPING EMPLOYEE WITH MANAGER
+
+ "employeeId": "EMP1",
+  "employeeName": "Vikas Ambekar",
+  "emailId": "ambekarviks@gmail.com",
+  "mobileNo": 7900001883,
+  "designation": "IT Deputy Manager",
+  "password": "Vikas@123",
+  "projectId": "p12",
+  "managerId": "MAB91",
+  "workingStatus": true,
+  "manager": {
+    "managerId": "MAB91",  
+    "managerName": "Sandeep Kuldeep",
+    "designation": "IT Manager",
+    "emailId": "sandeepkuldeep@axis.com",
+    "mobileNo": 8956234586,
+    "password": "Sandeep@11"
+  }
+
+2. MAPPING EMPLOYEE WITH PROJECT
+
+"employeeId": "EMP1",
+  "employeeName": "Vikas Ambekar",
+  "emailId": "ambekarviks@gmail.com",
+  "mobileNo": 7900001883,
+  "designation": "IT Deputy Manager",
+  "password": "Vikas@123",
+  "projectId": "PAB9P3",
+  "managerId": "MAB91",
+  "workingStatus": true,
+  "manager": {
+    "managerId": "MAB91",  
+    "managerName": "Sandeep Kuldeep",
+    "designation": "IT Manager",
+    "emailId": "sandeepkuldeep@axis.com",
+    "mobileNo": 8956234586,
+    "password": "Sandeep@11"
+  },
+  "project": {
+    "projectId": "PAB9P3",
+    "projectName": "Axis Credit Card Application",
+    "managerId": "MAB91"
+  }
+
+3. MAPPING EMPLOYEE WITH MANAGER, PROJECT (STAKEHOLDER)
+
+  "employeeId": "EMP1",
+  "employeeName": "Vikas Ambekar",
+  "emailId": "ambekarviks@gmail.com",
+  "mobileNo": 7900001883,
+  "designation": "IT Deputy Manager",
+  "password": "Vikas@123",
+  "projectId": "PAB9P3",
+  "managerId": "MAB91",
+  "workingStatus": true,
+  "manager": {
+    "managerId": "MAB91",  
+    "managerName": "Sandeep Kuldeep",
+    "designation": "IT Manager",
+    "emailId": "sandeepkuldeep@axis.com",
+    "mobileNo": 8956234586,
+    "password": "Sandeep@11"
+  },
+  "project": {
+    "projectId": "PAB9P3",
+    "projectName": "Axis Credit Card Application",
+    "managerId": "MAB91",
+    "stakeholder": {
+        "stakeholderId": "SHID1",
+        "stakeholderName": "Mohan Rajeev",
+        "stakeholderEmail": "mohan@gmail.com",
+        "stakeholderMobileNo": 7898635625,
+        "stakeholderPosition": "N/A"
+    }
+  }
+
+
+
