@@ -1,10 +1,12 @@
 package com.axis.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.Objects;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Employee {
     @Id
     @Column(name = "Employee_ID", nullable=false)
