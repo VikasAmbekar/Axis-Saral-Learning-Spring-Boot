@@ -18,6 +18,9 @@ public class Project {
     @Column(name = "Project_Manager_ID", nullable=false)
     public String managerId;
 
+    @Column(name = "Project_Description", nullable=false)
+    public String projectDescription;
+
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn
     private List<Stakeholder> stakeholder;
@@ -29,10 +32,11 @@ public class Project {
     public Project() {
     }
 
-    public Project(String projectId, String projectName, String managerId, List<Stakeholder> stakeholder, List<SupportTeam> supportTeamList) {
+    public Project(String projectId, String projectName, String managerId, String projectDescription, List<Stakeholder> stakeholder, List<SupportTeam> supportTeamList) {
         this.projectId = projectId;
         this.projectName = projectName;
         this.managerId = managerId;
+        this.projectDescription = projectDescription;
         this.stakeholder = stakeholder;
         this.supportTeamList = supportTeamList;
     }
@@ -59,6 +63,14 @@ public class Project {
 
     public void setManagerId(String managerId) {
         this.managerId = managerId;
+    }
+
+    public String getProjectDescription() {
+        return projectDescription;
+    }
+
+    public void setProjectDescription(String projectDescription) {
+        this.projectDescription = projectDescription;
     }
 
     public List<Stakeholder> getStakeholder() {

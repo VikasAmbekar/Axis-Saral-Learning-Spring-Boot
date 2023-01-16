@@ -119,45 +119,50 @@
     "mobileNo": 8956234586,
     "password": "Sandeep@11"
   },
-  "project": {
-    "projectId": "PAB9P3",
-    "projectName": "Axis Credit Card Application",
-    "managerId": "MAB91",
-    "stakeholder": [{
-        "stakeholderId": "SHID1",
-        "stakeholderName": "Mohan Rajeev",
-        "stakeholderEmail": "mohan@gmail.com",
-        "stakeholderMobileNo": 7898635625,
-        "stakeholderPosition": "N/A"
-        },
-        {
-        "stakeholderId": "SHID3",
-        "stakeholderName": "Baburao Ganpatrao Apte",
-        "stakeholderEmail": "babu@gmail.com",
-        "stakeholderMobileNo": 7998635625,
-        "stakeholderPosition": "counsellor member"  
-        }
-    ],
-    "supportTeamList": [
-        {
-            "employeeId": "EMP51",  
-            "employeeName": "Mohmmad Shami",
-            "emailId": "shami@gmail.com",
-            "mobileNo": 8888999989,
-            "designation": "IT Support",
-            "password": "Shami@51"
-        },
-        {
-            "employeeId": "EMP52",  
-            "employeeName": "Deepak Hooda",
-            "emailId": "deepak@gmail.com",
-            "mobileNo": 8887799989,
-            "designation": "IT Support",
-            "password": "Shami@52"
-        }
+  "project": "projectId": "PAB9P3",
+        "projectName": "Axis Credit Card Application",
+        "managerId": "MAB91",
+        "projectDescription": "Axis credit card application gives central place to optimally manager your credit histroty with advanced functionalities.",
+        "stakeholder": [
+            {
+                "stakeholderId": "SHID5",
+                "stakeholderName": "Rohan Ner",
+                "stakeholderEmail": "rohann@gmail.com",
+                "stakeholderMobileNo": 7898635625,
+                "stakeholderPosition": "Committee Member"
+            },
+            {
+                "stakeholderId": "SHID6",
+                "stakeholderName": "Virat Kohli",
+                "stakeholderEmail": "virat@gmail.com",
+                "stakeholderMobileNo": 7985635625,
+                "stakeholderPosition": "CTO"
+            }
+        ],
+        "supportTeamList": [
+            {
+                "employeeId": "EMP11",
+                "employeeName": "Roshan Singh Sodhi",
+                "emailId": "roshan@gmail.com",
+                "mobileNo": 8888977989,
+                "designation": "IT Support",
+                "password": "Roshan123"
+            },
+            {
+                "employeeId": "EMP12",
+                "employeeName": "Taarak Mehta",
+                "emailId": "mehta@gmail.com",
+                "mobileNo": 7654977989,
+                "designation": "IT Support",
+                "password": "TaarakM#421"
+            }
+        ]
+    }
 
-    ]
-  }
+
+  
+
+
 
 
 
