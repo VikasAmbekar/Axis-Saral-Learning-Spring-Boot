@@ -29,16 +29,22 @@ public class Project {
     @JoinColumn
     private List<SupportTeam> supportTeamList;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn
+    private List<Manager> managerList;
+
     public Project() {
     }
 
-    public Project(String projectId, String projectName, String managerId, String projectDescription, List<Stakeholder> stakeholder, List<SupportTeam> supportTeamList) {
+
+    public Project(String projectId, String projectName, String managerId, String projectDescription, List<Stakeholder> stakeholder, List<SupportTeam> supportTeamList, List<Manager> managerList) {
         this.projectId = projectId;
         this.projectName = projectName;
         this.managerId = managerId;
         this.projectDescription = projectDescription;
         this.stakeholder = stakeholder;
         this.supportTeamList = supportTeamList;
+        this.managerList = managerList;
     }
 
     public String getProjectId() {
@@ -87,6 +93,14 @@ public class Project {
 
     public void setSupportTeamList(List<SupportTeam> supportTeamList) {
         this.supportTeamList = supportTeamList;
+    }
+
+    public List<Manager> getManagerList() {
+        return managerList;
+    }
+
+    public void setManagerList(List<Manager> managerList) {
+        this.managerList = managerList;
     }
 
     @Override
