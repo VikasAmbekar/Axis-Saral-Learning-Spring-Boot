@@ -1,0 +1,33 @@
+1. Salary Slip
+
+   "currentDate": "2023-01-19",
+    "monthDate": "2023-01-19",
+    "salaryAmount": 50000,
+    "basicPay": 20000,
+    "allowance": 10000,
+    "pfContribution": 3000,
+    "locationPay": 10000,
+    "benefitsPay": 10000,
+    "employeeId": "EMP1"
+
+2. Joining Letter
+
+   "dateOfJoining": "2023-02-13",
+    "employeeId": "EMP1"
+
+3. Appointment Letter
+
+   "appointId": 1,
+    "currentDate": "2023-01-19",
+    "appointmentDate": "2023-01-25",
+    "employeeId": "EMP1"
+
+4. Increament Letter
+
+   "appointId": 1,
+   "currentDate": "2023-01-19",
+   "appointmentDate": "2023-01-25",
+   "employeeId": "EMP1"
+   
+
+
