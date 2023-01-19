@@ -1,0 +1,8 @@
+1. Admin Input 
+
+    "mobileNo": 8086808680,
+    "adminname": "Axis Saral Admin",
+    "adminemailId": "admin@axis.com",
+    "adminPassword": "Admin@8086"
+
+2. 
