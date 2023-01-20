@@ -22,22 +22,22 @@ public class JoiningLetterController {
 	@Autowired
 	private JoiningLetterService joiningLetterService;
 	
-	@GetMapping("/joiningLetter")
+	@GetMapping("/joiningLetters")
 	public List<JoiningLetter> getAllJoinigLetter(){
         return joiningLetterService.getAllJoiningLetter();
 	 }
-	@GetMapping("/JoiningLetter/{joiningId}")
+	@GetMapping("/joiningLetter/{joiningId}")
 	public JoiningLetter getJoiningLetterById(@PathVariable Long joiningId){
         return joiningLetterService.getJoiningLetterById(joiningId);
     }
-	@PostMapping("/JoiningLetter/add")
+	@PostMapping("/joiningLetter/add")
 	public ResponseEntity<String> add(@RequestBody JoiningLetter joiningLetter){
         joiningLetterService.addJoiningLetter(joiningLetter);
         return new ResponseEntity<String>("Joining Letter is added successfully.", HttpStatus.OK);
 	
 	
 	}
-	@PutMapping("/JoiningLetter/update/{joiningId}")
+	@PutMapping("/joiningLetter/update/{joiningId}")
 	public ResponseEntity<String> updateJoiningLetter(@PathVariable Long joiningId, @RequestBody JoiningLetter joiningLetter){
 		joiningLetterService.updateJoiningLetter(joiningId, joiningLetter);
         return new ResponseEntity<String> ("Joining letter with Id: "+ joiningId +" is updated Successfully.", HttpStatus.OK);

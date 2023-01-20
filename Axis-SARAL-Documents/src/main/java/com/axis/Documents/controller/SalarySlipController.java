@@ -25,7 +25,7 @@ public class SalarySlipController {
 	 public List<SalarySlip> getAllSalarySlip(){
         return salarySlipService.getAllSalarySlip();
 	 }
-	@GetMapping("/salaryslips/{salaryId}")
+	@GetMapping("/salaryslip/{salaryId}")
 	public SalarySlip getSalarySlipById(@PathVariable Long salaryId){
         return salarySlipService.getSalarySlipById(salaryId);
     }
