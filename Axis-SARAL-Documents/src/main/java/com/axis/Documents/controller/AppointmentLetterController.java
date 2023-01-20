@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.axis.Documents.entity.AppointmentLetter;
-
 import com.axis.Documents.service.AppointmentLetterService;
+
+
 @RestController
+@CrossOrigin("http://localhost:3000/")
 public class AppointmentLetterController {
 	@Autowired
 	private AppointmentLetterService appointmentLetterService;

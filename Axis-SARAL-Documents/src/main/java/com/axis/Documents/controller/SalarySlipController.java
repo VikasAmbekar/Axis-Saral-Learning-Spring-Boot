@@ -2,24 +2,33 @@ package com.axis.Documents.controller;
 
 import java.util.List;
 
+import com.axis.Documents.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.axis.Documents.entity.SalarySlip;
 import com.axis.Documents.service.SalarySlipService;
-@RestController
+import org.springframework.web.client.RestTemplate;
 
+@RestController
+@CrossOrigin("http://localhost:3000/")
 public class SalarySlipController {
 	@Autowired
 	private SalarySlipService salarySlipService;
+
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@GetMapping("/salaryslip/employees")
+		public List<Employee> getAllemployee(){
+			String url="http://localhost:8085/employees";
+			List<Employee> getAllEmp= restTemplate.getForObject(url, List.class);
+			return getAllEmp;
+	}
+
 	
 	@GetMapping("/salaryslips")
 	 public List<SalarySlip> getAllSalarySlip(){

@@ -15,6 +15,7 @@ import com.axis.Documents.entity.IncrementLetter;
 import com.axis.Documents.service.IncrementLetterService;
 
 @RestController
+@CrossOrigin("http://localhost:3000/")
 public class IncrementLetterController {
 	@Autowired
 	private IncrementLetterService incrementLetterService;

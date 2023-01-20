@@ -18,6 +18,7 @@ import com.axis.Documents.entity.JoiningLetter;
 import com.axis.Documents.service.JoiningLetterService;
 
 @RestController
+@CrossOrigin("http://localhost:3000/")
 public class JoiningLetterController {
 	@Autowired
 	private JoiningLetterService joiningLetterService;
