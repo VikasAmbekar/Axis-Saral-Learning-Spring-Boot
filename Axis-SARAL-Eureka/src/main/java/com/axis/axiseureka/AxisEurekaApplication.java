@@ -1,4 +1,4 @@
-package com.axis;
+package com.axis.axiseureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
 @EnableEurekaServer
-public class AxisSaralEurekaApplication {
+public class AxisEurekaApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(AxisSaralEurekaApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(AxisEurekaApplication.class, args);
+	}
 
 }

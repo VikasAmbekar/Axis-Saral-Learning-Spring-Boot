@@ -1,10 +1,10 @@
-package com.axis;
+package com.axis.axiseureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AxisSaralEurekaApplicationTests {
+class AxisEurekaApplicationTests {
 
 	@Test
 	void contextLoads() {

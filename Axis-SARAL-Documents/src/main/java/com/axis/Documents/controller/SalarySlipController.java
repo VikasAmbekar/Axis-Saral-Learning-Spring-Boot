@@ -28,8 +28,6 @@ public class SalarySlipController {
 			List<Employee> getAllEmp= restTemplate.getForObject(url, List.class);
 			return getAllEmp;
 	}
-
-	
 	@GetMapping("/salaryslips")
 	 public List<SalarySlip> getAllSalarySlip(){
         return salarySlipService.getAllSalarySlip();
