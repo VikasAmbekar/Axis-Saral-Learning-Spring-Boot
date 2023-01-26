@@ -1,0 +1,4 @@
+"name": "Vikas Ambekar",
+"password": "vikas1",
+"email": "admin1@axissaral.com",
+"roles: "ROLE_ADMIN"
