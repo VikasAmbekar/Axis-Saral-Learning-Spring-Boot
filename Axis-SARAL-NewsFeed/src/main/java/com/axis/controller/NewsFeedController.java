@@ -3,6 +3,7 @@ package com.axis.controller;
 import com.axis.entity.NewsFeed;
 import com.axis.service.NewsFeedService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://localhost:3000/")
 public class NewsFeedController {
 
     @Autowired
@@ -17,7 +19,7 @@ public class NewsFeedController {
 
     @GetMapping("/news/{newsFeedId}")
     public NewsFeed getNewsById(
-           @PathVariable long newsFeedId){
+            @PathVariable long newsFeedId){
         return newsFeedService.getNewsById(newsFeedId);
     }
 

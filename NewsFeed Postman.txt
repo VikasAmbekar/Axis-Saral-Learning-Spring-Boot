@@ -1,19 +1,14 @@
-1. News Feed
-
-{
-        "newsName": "Axis Gold Loan",
-        "newsImageUrl": "https://www.info.fastread.in/wp-content/uploads/2022/10/Axis-Bank-Gold-Loan.jpg",
-        "newsComment": "Home Loan At 4% r.i",
-        "employeeName": "Jill Chawhan"
-}
 
 
-2. News Feed With ID
 
-{
-        "newsFeedId": 2,
-        "newsName": "Axis Gold Loan",
-        "newsImageUrl": "https://www.info.fastread.in/wp-content/uploads/2022/10/Axis-Bank-Gold-Loan.jpg",
-        "newsComment": "Home Loan At 4% r.i",
-        "employeeName": "Jill Chawhan"
-}
+    "newsName": "Axis Home Loan",
+    "newsImageUrl": "https://www.info.fastread.in/wp-content/uploads/2022/10/Axis-Bank-Gold-Loan.jpg",
+    "newsDescription": "Axis Home Loan",
+    "commentList": [
+        {
+   		"message": "Comment for newsfeed 52"
+	  }
+    ]
+
+
+

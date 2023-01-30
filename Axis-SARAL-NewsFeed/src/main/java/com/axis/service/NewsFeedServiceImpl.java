@@ -1,5 +1,6 @@
 package com.axis.service;
 
+
 import com.axis.entity.NewsFeed;
 import com.axis.repository.NewsFeedRepository;
 import org.springframework.beans.factory.annotation.Autowired;
