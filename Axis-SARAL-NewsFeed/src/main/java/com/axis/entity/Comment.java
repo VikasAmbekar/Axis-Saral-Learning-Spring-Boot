@@ -24,6 +24,9 @@ public class Comment {
     @Column(name = "message")
     private String message;
 
+    @Column(name = "name")
+    private String name;
+
     @JsonIgnore
     @ManyToOne()
     @JoinColumn(name = "news_feed_id", referencedColumnName = "NewsId")

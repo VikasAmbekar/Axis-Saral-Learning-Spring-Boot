@@ -12,4 +12,5 @@ public class CommentDto {
 
     private Integer commentId;
     private String message;
+    private String name;
 }
