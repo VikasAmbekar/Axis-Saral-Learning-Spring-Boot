@@ -3,3 +3,7 @@
     "productDescription": "Axis card with debit limit upto 1.5 Lacks  per day.",
     "imageUrl": "https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2019/03/28/80052-rupay-website.png?itok=DyBjn9bf"
 }
+
+
+http://localhost:8089/product/add
+
