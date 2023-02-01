@@ -160,10 +160,125 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
   
+1. Project 
+
+{
+        "projectId": "PAB9P3",
+        "projectName": "Axis Credit Card Application",
+        "managerId": "MAB91",
+        "projectDescription": "Axis credit card application gives central place to optimally manager your credit histroty with advanced functionalities.",
+        "stakeholder": [],
+        "supportTeamList": [],
+        "managerList": [
+            {
+                "managerId": "MAB91",
+                "managerName": "Sandeep Kuldeep",
+                "designation": "IT Manager",
+                "emailId": "sandeepkuldeep@axis.com",
+                "mobileNo": 8956234586,
+                "password": "Sandeep@11"
+            }
+        ]
+    }
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Support Team
+
+{
+        "employeeId": "EMP12",
+        "employeeName": "Taarak Mehta",
+        "emailId": "mehta@gmail.com",
+        "mobileNo": 7654977989,
+        "designation": "IT Support",
+        "password": "TaarakM#421"
+}
 
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+3. StakeHolder 
+
+ {
+        "stakeholderId": "SHID5",
+        "stakeholderName": "Rohan Ner",
+        "stakeholderEmail": "rohann@gmail.com",
+        "stakeholderMobileNo": 7898635625,
+        "stakeholderPosition": "Committee Member"
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Manager
+
+{
+        "managerId": "MAB91",
+        "managerName": "Sandeep Kuldeep",
+        "designation": "IT Manager",
+        "emailId": "sandeepkuldeep@axis.com",
+        "mobileNo": 8956234586,
+        "password": "Sandeep@11"
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Employee 
+
+{
+        "employeeId": "EMP1",
+        "employeeName": "Vikas Ambekar",
+        "emailId": "ambekarviks@gmail.com",
+        "mobileNo": 7900001883,
+        "designation": "IT Deputy Manager",
+        "password": "Vikas@123",
+        "projectId": "PAB9P3",
+        "managerId": "MAB91",
+        "workingStatus": true,
+        "manager": {
+            "managerId": "MAB91",
+            "managerName": "Sandeep Kuldeep",
+            "designation": "IT Manager",
+            "emailId": "sandeepkuldeep@axis.com",
+            "mobileNo": 8956234586,
+            "password": "Sandeep@11"
+        },
+        "project": {
+            "projectId": "PAB9P3",
+            "projectName": "Axis Credit Card Application",
+            "managerId": "MAB91",
+            "projectDescription": "Axis credit card application gives central place to optimally manager your credit histroty with advanced functionalities.",
+            "stakeholder": [],
+            "supportTeamList": [],
+            "managerList": [
+                {
+                    "managerId": "MAB91",
+                    "managerName": "Sandeep Kuldeep",
+                    "designation": "IT Manager",
+                    "emailId": "sandeepkuldeep@axis.com",
+                    "mobileNo": 8956234586,
+                    "password": "Sandeep@11"
+                }
+            ]
+        }
+    }
 
