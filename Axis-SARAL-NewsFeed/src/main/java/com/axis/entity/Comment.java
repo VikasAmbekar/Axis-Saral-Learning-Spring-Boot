@@ -2,18 +2,13 @@ package com.axis.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
-import lombok.*;
+import javax.persistence.*;
+
 
 import java.util.Objects;
 
 
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
-@Data
-@EqualsAndHashCode
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Comment {
     @Id
@@ -29,7 +24,70 @@ public class Comment {
 
     @JsonIgnore
     @ManyToOne()
-    @JoinColumn(name = "news_feed_id", referencedColumnName = "NewsId")
+    @JoinColumn(name = "news_feed_id", referencedColumnName = "news_id")
     private NewsFeed newsFeed;
 
+    public Comment() {
+    }
+
+    public Comment(int commentId, String message, String name, NewsFeed newsFeed) {
+        this.commentId = commentId;
+        this.message = message;
+        this.name = name;
+        this.newsFeed = newsFeed;
+    }
+
+    public int getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public NewsFeed getNewsFeed() {
+        return newsFeed;
+    }
+
+    public void setNewsFeed(NewsFeed newsFeed) {
+        this.newsFeed = newsFeed;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "commentId=" + commentId +
+                ", message='" + message + '\'' +
+                ", name='" + name + '\'' +
+                ", newsFeed=" + newsFeed +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Comment comment)) return false;
+        return getCommentId() == comment.getCommentId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCommentId());
+    }
 }

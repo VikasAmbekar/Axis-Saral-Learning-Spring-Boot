@@ -8,7 +8,8 @@ import java.util.List;
 public interface NewsFeedService {
     NewsFeed getNewsById(long newsFeedId);
     List<NewsFeed> getAllNews();
-    void addNews(NewsFeed newsFeed);
+
+    abstract void addNews(NewsFeed newsFeed);
     void updateNews(long newsFeedId, NewsFeed newsFeed);
     void deleteNews(long newsFeedId);
 }

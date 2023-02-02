@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface NewsFeedRepository extends JpaRepository<NewsFeed, Long> {
+
+public interface NewsFeedRepository extends JpaRepository<NewsFeed, Long>{
 
 }

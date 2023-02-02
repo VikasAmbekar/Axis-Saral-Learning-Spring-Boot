@@ -23,16 +23,20 @@ public class Manager {
     @Column(name = "Password", nullable = false)
     private String password;
 
+    @Column(name = "Manager_Profile", nullable=false)
+    public String profile;
+
     public Manager() {
     }
 
-    public Manager(String managerId, String managerName, String designation, String emailId, Long mobileNo, String password) {
+    public Manager(String managerId, String managerName, String designation, String emailId, Long mobileNo, String password, String profile) {
         this.managerId = managerId;
         this.managerName = managerName;
         this.designation = designation;
         this.emailId = emailId;
         this.mobileNo = mobileNo;
         this.password = password;
+        this.profile = profile;
     }
 
     public String getManagerId() {
@@ -81,6 +85,28 @@ public class Manager {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "managerId='" + managerId + '\'' +
+                ", managerName='" + managerName + '\'' +
+                ", designation='" + designation + '\'' +
+                ", emailId='" + emailId + '\'' +
+                ", mobileNo=" + mobileNo +
+                ", password='" + password + '\'' +
+                ", profile='" + profile + '\'' +
+                '}';
     }
 
     @Override

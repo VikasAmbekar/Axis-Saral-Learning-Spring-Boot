@@ -4,6 +4,8 @@ import com.axis.entity.Comment;
 import com.axis.entity.NewsFeed;
 import com.axis.payloads.CommentDto;
 import com.axis.repository.CommentRepository;
+
+
 import com.axis.repository.NewsFeedRepository;
 import com.netflix.discovery.converters.Auto;
 import org.modelmapper.ModelMapper;
@@ -21,8 +23,11 @@ public class CommentServiceImpl implements CommentService{
     @Autowired
     private NewsFeedRepository newsFeedRepository;
 
+
     @Autowired
     private ModelMapper modelMapper;
+
+
 
 
     @Override

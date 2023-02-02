@@ -1,7 +1,7 @@
 package com.axis.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.util.List;
 import java.util.Objects;

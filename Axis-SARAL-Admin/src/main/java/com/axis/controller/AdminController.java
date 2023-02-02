@@ -23,18 +23,17 @@ public class AdminController {
 
     @GetMapping("/admin/employee/{employeeId}")
     public Employee getEmployeeById(@PathVariable String employeeId){
-        String url="http://localhost:8085/employee/"+employeeId;
+        String url="http://axis-saral-learning/employee/"+employeeId;
         Employee empById=restTemplate.getForObject(url, Employee.class);
         return  empById;
     }
 
     @GetMapping("/admin/employees")
     public List<Employee> getAllemployee(){
-        String url="http://localhost:8085/employees";
+        String url="http://axis-saral-learning/employees";
         List<Employee> getAllEmp= restTemplate.getForObject(url, List.class);
         return getAllEmp;
     }
-
 
 
     @GetMapping("/admins")
